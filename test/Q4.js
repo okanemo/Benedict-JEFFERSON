@@ -7,4 +7,5 @@ const sum = (a,c) => (function (a,c) {
   }
 })(a,c);
 
+console.log(sum(2,3))
 console.log(sum(2)(3))
