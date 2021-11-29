@@ -1,14 +1,4 @@
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question('Input a word: ', (answer) => {
-  console.log(sama(answer));
-  rl.close();
-});
+let word = "katak";
 
 function sama(word) {
   let reverse = '';
@@ -23,3 +13,5 @@ function sama(word) {
     return false;
   }
 }
+
+console.log(sama(word))
